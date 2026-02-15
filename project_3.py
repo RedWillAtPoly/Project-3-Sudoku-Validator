@@ -26,6 +26,7 @@ def all_rows_checker(grid):
         sorted_row = sorted(row)
         if sorted_row != [1,2,3,4,5,6,7,8,9]:
              return False
+    return True
 
 #checks every column - by collecting all of the 1st/2nd/3rd...etc element of every row
 def all_columns_checker(grid):
@@ -81,5 +82,5 @@ valid_board = [
   [2,8,7,4,1,9,6,3,5],
   [3,4,5,2,8,6,1,7,9]
 ]
-if not checker(valid_board):
-    print('all good')
+#if not checker(valid_board):
+#    print('all good')
