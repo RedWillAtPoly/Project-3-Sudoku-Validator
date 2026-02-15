@@ -2,11 +2,12 @@
 def check_dimensions(grid):
     #checks that there are 9 rows
     if len(grid) != 9:
-            return False
+        return False
     #checks each row has 9 elements
     for row in grid:
         if len(row) != 9:
             return False
+    #Could add an if statement to return false if type(row) != list: #if the row is actually a tuple
     return True
 
 #validates data to be integers 1-9
